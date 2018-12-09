@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息添加</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../static/css/index_work.css">
+<body>
+<style type="text/css">
+    h2{text-align: center;}
+    div{border: 1px solid red;width: 600px;height: 400px;style-size: 450px;}
+</style>
+    <h2>学生信息添加</h2>
+    <a href="/index"><input type="button" value="首页"></a>
+    <a href="/query"><input type="button" value="查询"></a>
+    <form action="/addInvitation/" method="post">
+        学号：<input type="text" name="number" style="width: 500px"><br>
+        姓名：<input type="text" name="name" style="width: 500px"><br>
+        班级：<input name="grade" style="width: 500px"></input><br>
+        性别：<input type="text" name="sex" style="width: 500px"><br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

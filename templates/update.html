@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../static/css/index_work.css">
+<body>
+    <form action="/updateInvitation/" method="post">
+        {% for i in invitation %}
+            学号：<input type="text" name="number" value="{{ i.number }}" style="width: 500px"><br>
+            姓名：<input type="text" name="name" value="{{ i.name }} " style="width: 500px"><br>
+            班级：<input type="grade" name="grade"value="{{ i.grade }}"style="width: 500px" ><br>
+            性别：<input type="text" name="sex" value="{{ i.sex }}" style="width: 500px"><br>
+            <input type="submit" value="确认修改">
+        {% endfor %}
+    </form>
+</body>
+</html>
